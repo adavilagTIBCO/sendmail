@@ -40,7 +40,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error) {
 	// do eval
 	body := "To: " + to + "\r\nSubject: " +
 		subject + "\r\n\r\n" + message
-	auth := smtp.PlainAuth("", from, password, "smtp.gmail.com")
+	auth := smtp.PlainAuth("", from, password, server)
 	err = smtp.SendMail(url, auth, from,
 		[]string{to}, []byte(body))
 	context.SetOutput("result", "The email has been sent to "+to)
