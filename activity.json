@@ -2,8 +2,9 @@
   "name": "sendmail",
   "version": "0.0.1",
   "type": "flogo:activity",
-  "description": "activity description",
-  "author": "Your Name <you.name@example.org>",
+  "description": "Flogo custom activity to send an email using gmail",
+  "author": "TIBCOmpadres team <adavilag@tibco.com>, <aosuna@tibco.com>, <dchavarr@tibco.com> ",
+  "ref": "github.com/adavilagTIBCO/sendmail",
   "inputs":[
     {
       "name": "to",
