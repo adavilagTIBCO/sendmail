@@ -1,0 +1,44 @@
+{
+  "name": "sendmail",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "activity description",
+  "author": "Your Name <you.name@example.org>",
+  "inputs":[
+    {
+      "name": "to",
+      "type": "string"
+    },
+    {
+      "name": "from",
+      "type": "string"
+    },
+    {
+      "name": "password",
+      "type": "string"
+    },
+    {
+      "name": "subject",
+      "type": "string"
+    },
+    {
+      "name": "message",
+      "type": "string"
+    },
+    {
+      "name": "server",
+      "type": "string"
+    },
+    {
+      "name": "port",
+      "type": "int"
+    }
+
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}
